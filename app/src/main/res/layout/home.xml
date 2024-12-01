@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Button to open the Bottom Sheet -->
+
+    <!-- CardView for displaying daily step count and calories burned -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/daily_steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StepsCount: 0"
+                android:textSize="24sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/calories_burned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CaloriesBurned: 0"
+                android:textSize="24sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- RecyclerView for horizontal scrollable cards -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/features_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/open_bottom_sheet_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLICK"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/OrangeRed"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Fitness Data"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/log_food_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_fastfood_24"
+    android:text="Food Track"
+        android:backgroundTint="@color/OrangeRed"/>
+
+    <Button
+        android:id="@+id/track_sleep_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_hotel_24"
+    android:text="Sleep Track"
+        android:backgroundTint="@color/OrangeRed"/>
+
+    <Button
+        android:id="@+id/track_weight_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_radio_button_unchecked_24"
+    android:text="Weight Track"
+        android:backgroundTint="@color/OrangeRed"/>
+
+</LinearLayout>
